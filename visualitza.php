@@ -26,7 +26,7 @@
 ?>
 <html>
 	<head>
-		<title>MOSTRANT DADES D'USUARIS DE LA BASE DE DADES LDAP</title>
+		<title>Visualitza les dades de l'usuari que vulguis de la base de dades LDAP</title>
 	</head>
 	<body>
 		<form action="http://zend-arolco.fjeclot.net/projecte_olivella/visualitza.php" method="GET">

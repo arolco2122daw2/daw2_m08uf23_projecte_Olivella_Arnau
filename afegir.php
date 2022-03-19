@@ -19,7 +19,7 @@
 	$sn=$_POST['sn'];
 	$nom=$_POST['nom'];
 	$mobil=$_POST['mobil'];
-	$adressa=$_POST['adreca'];
+	$adreca=$_POST['adreca'];
 	$telefon=$_POST['telefon'];
 	$titol=$_POST['titol'];
 	$descripcio=$_POST['descripcio'];
@@ -64,7 +64,7 @@
 		</title>
 	</head>
 	<body>
-		<form action="http://zend-arolco.fjeclot.net/projecte_olivella/afegir.php" method="POST">
+		<form action="http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/afegir.php" method="POST">
 		Uid: <input type="text" name="uid"><br>
 		Unitat organitzativa: <input type="text" name="unorg"><br>
 		uidNumber: <input type="number" name="num_id"><br>

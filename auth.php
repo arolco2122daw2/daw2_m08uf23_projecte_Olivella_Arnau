@@ -30,6 +30,6 @@
 		</title>
 	</head>
 	<body>
-		<a href="http://zend-arolco.fjeclot.net/projecte_olivella/index.php">Torna a la pàgina inicial</a>
+		<a href="http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/index.php">Torna a la pàgina inicial</a>
 	</body>
 </html>

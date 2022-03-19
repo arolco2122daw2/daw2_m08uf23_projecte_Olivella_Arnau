@@ -36,7 +36,7 @@
 		<title> Elimina l'usuari que vulguis de la base de dades LDAP</title>
 	</head>
 	<body>
-		<form action="http://zend-arolco.fjeclot.net/projecte_olivella/eliminar.php" method="GET">
+		<form action="http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/eliminar.php" method="GET">
 			Usuari: <input type="text" name="usr"><br>			
             Unitat organitzativa: <input type="text" name="ou"><br>
 			<input type="submit"/>

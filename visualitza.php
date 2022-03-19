@@ -29,7 +29,7 @@
 		<title>Visualitza les dades de l'usuari que vulguis de la base de dades LDAP</title>
 	</head>
 	<body>
-		<form action="http://zend-arolco.fjeclot.net/projecte_olivella/visualitza.php" method="GET">
+		<form action="http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/visualitza.php" method="GET">
 			Unitat organitzativa: <input type="text" name="ou"><br>
 			Usuari: <input type="text" name="usr"><br>
 			<input type="submit"/>

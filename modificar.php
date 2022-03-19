@@ -47,7 +47,7 @@
 		<title>Modifica els camps d'un usuari de la base de dades LDAP</title>
 	</head>
 	<body>
-		<form action="http://zend-arolco.fjeclot.net/projecte_arolco/modificar.php" method="GET">
+		<form action="http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/modificar.php" method="GET">
             Usuari: <input type="text" name="usr"><br>			
             Unitat organitzativa: <input type="text" name="ou"><br><br><br>
 			

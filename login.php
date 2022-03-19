@@ -1,11 +1,11 @@
 <html>
 	<head>
 		<title>
-			AUTENTICANT AMB LDAP DE L'USUARI admin
+			Login amb LDAP de l'usuari admin
 		</title>
 	</head>
 	<body>
-		<form action="http://zend-arolco.fjeclot.net/projecte_arolco/auth.php" method="POST">
+		<form action="http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/auth.php" method="POST">
 			Usuari amb permisos d'administració LDAP: <input type="text" name="adm"><br>
 			Contrasenya de l'usuari: <input type="password" name="cts"><br>
 			<input type="submit" value="Envia" />

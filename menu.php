@@ -8,6 +8,6 @@
 		Esborrament d'usuaris <button><a href="eliminar.php">Formulari per esborrar un usuari</a></button> <br><br>
 		Modificacio d'usuaris <button><a href="modificar.php">Formulari per modificar un usuari</a></button> <br><br><br><br>
 		
-		Tanca la sessio <button><a href="index.php">Tanca la sessió</a></button> <br><br>
+		Tanca la sessio <button><a href="inici.php">Tanca la sessió</a></button> <br><br>
 	</body>
 </html>

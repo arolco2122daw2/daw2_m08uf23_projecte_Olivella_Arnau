@@ -4,25 +4,22 @@
 	use Laminas\Ldap\Ldap;
 
 	ini_set('display_errors', 0);
-	
-	if ($_POST['uid'] && $_POST['unorg'] && $_POST['num_id'] && $_POST['grup'] && $_POST['dir_pers'] && $_POST['sh'] && $_POST['cn'] && $_POST['sn']
-	    && $_POST['nom'] && $_POST['mobil'] && $_POST['adreca'] && $_POST['telefon'] && $_POST['titol'] && $_POST['descripcio']){
 	#Dades de la nova entrada
-
-	$uid=$_POST['uid'];
-	$unorg=$_POST['unorg'];
-	$num_id=$_POST['num_id'];
-	$grup=$_POST['grup'];
-	$dir_pers=$_POST['dir_pers'];
-	$sh=$_POST['sh'];
-	$cn=$_POST['cn'];
-	$sn=$_POST['sn'];
-	$nom=$_POST['nom'];
-	$mobil=$_POST['mobil'];
-	$adreca=$_POST['adreca'];
-	$telefon=$_POST['telefon'];
-	$titol=$_POST['titol'];
-	$descripcio=$_POST['descripcio'];
+	#
+	$uid=$_POST["uid"];
+	$unorg=$_POST["uo"];
+	$num_id=$_POST["nUID"];
+	$grup=$_POST["gUID"];
+	$dir_pers=$_POST["dp"];
+	$sh=$_POST["shell"];
+	$cn=$_POST["cn"];
+	$sn=$_POST["sn"];
+	$nom=$_POST["nom"];
+	$mobil=$_POST["mobile"];
+	$adressa=$_POST["adr"];
+	$telefon=$_POST["tel"];
+	$titol=$_POST["title"];
+	$descripcio=$_POST["desc"];
 	$objcl=array('inetOrgPerson','organizationalPerson','person','posixAccount','shadowAccount','top');
 	#
 	#Afegint la nova entrada
@@ -48,13 +45,18 @@
 	Attribute::setAttribute($nova_entrada, 'sn', $sn);
 	Attribute::setAttribute($nova_entrada, 'givenName', $nom);
 	Attribute::setAttribute($nova_entrada, 'mobile', $mobil);
-	Attribute::setAttribute($nova_entrada, 'postalAddress', $adreca);
+	Attribute::setAttribute($nova_entrada, 'postalAddress', $adressa);
 	Attribute::setAttribute($nova_entrada, 'telephoneNumber', $telefon);
 	Attribute::setAttribute($nova_entrada, 'title', $titol);
 	Attribute::setAttribute($nova_entrada, 'description', $descripcio);
 	$dn = 'uid='.$uid.',ou='.$unorg.',dc=fjeclot,dc=net';
-	if($ldap->add($dn, $nova_entrada)) echo "Usuari creat";	
+	try{
+	    $ldap->add($dn, $nova_entrada);
+	    echo "Usuari creat";	
+	}catch(Exception $error){
+	    echo "<b>Aquesta entrada no existeix</b><br><br>";
 	}
+	echo "<br><br><a href=\"http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/menu.php\">Torna al menú</a>";
 ?>
 
 
@@ -65,23 +67,22 @@
 	</head>
 	<body>
 		<form action="http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/afegir.php" method="POST">
-		Uid: <input type="text" name="uid"><br>
-		Unitat organitzativa: <input type="text" name="unorg"><br>
-		uidNumber: <input type="number" name="num_id"><br>
-		gidNumber: <input type="number" name="grup"><br>
-		Directori personal: <input type="text" name="dir_pers"><br>
-		Shell: <input type="text" name="sh"><br>
-		cn: <input type="text" name="cn"><br>
-		sn: <input type="text" name="sn"><br>
-		givenName: <input type="text" name="nom"><br>
-		mobile: <input type="number" name="mobil"><br>
-		postalAddress: <input type="text" name="adreca"><br>
-		telephoneNumber: <input type="number" name="telefon"><br>
-		title: <input type="text" name="titol"><br>
-		description: <input type="text" name="descripcio"><br>
-		
-		<input type="submit"/>
-		<input type="reset"/>
+			UID: <input required type="text" name="uid"><br>
+			Unitat Organitzativa: <input required type="text" name="uo"><br>
+			UID Num: <input required type="number" name="nUID"><br>
+			Grup Num: <input required type="number" name="gUID"><br>
+			Directori personal: <input required type="text" name="dp"><br>
+			SH: <input required type="text" name="shell"><br>
+			CN: <input required type="text" name="cn"><br>
+			SN: <input required type="text" name="sn"><br>
+			Nom: <input required type="text" name="nom"><br>
+			Adressa: <input required type="text" name="adr"><br>
+			Mobil: <input required type="text" name="mobile"><br>
+			Telefon: <input required type="text" name="tel"><br>
+			Titol: <input required type="text" name="title"><br>
+			Descripcio: <input required type="text" name="desc"><br>
+			<input type="submit" value="Envia" />
+			<input type="reset" value="Neteja" />
 		</form>
 	</body>
 </html>

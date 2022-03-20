@@ -1,13 +1,15 @@
 <html>
 	<head>
-		<title>MENU</title>
+		<title>
+			PÀGINA WEB DEL MENÚ PRINCIPAL DE L'APLICACIÓ D'ACCÉS A BASES DE DADES LDAP
+		</title>
 	</head>
 	<body>
-		Visualitzacio d'usuaris <button><a href="visualitza.php">Formulari per visualitzar un usuari</a></button> <br><br>		
-        Creacio d'usuaris <button><a href="afegir.php">Formulari per crear un usuari</a></button> <br><br>
-		Esborrament d'usuaris <button><a href="eliminar.php">Formulari per esborrar un usuari</a></button> <br><br>
-		Modificacio d'usuaris <button><a href="modificar.php">Formulari per modificar un usuari</a></button> <br><br><br><br>
-		
-		Tanca la sessio <button><a href="inici.php">Tanca la sessió</a></button> <br><br>
+		<h2> MENÚ PRINCIPAL DE L'APLICACIÓ D'ACCÉS A BASES DE DADES LDAP</h2>
+		<h3> <a href="http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/visualitza.php">Veure Usuari</a> </h3>
+		<h3> <a href=""http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/afegir.php">Afegir Usuari</a> </h3>
+		<h3> <a href="http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/modificar.php">Modificar Usuari</a> </h3>
+		<h3> <a href="http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/eliminar.php">Eliminar Usuari</a> </h3>
+		<a href="http://zend-arolco.fjeclot.net/daw2_m08_uf23_projecte_Olivella_Arnau/index.php">Torna a la pàgina inicial</a>
 	</body>
-</html>
+</html
